@@ -1,0 +1,51 @@
+﻿@model IEnumerable<PetShop.Data.Models.Animal>
+
+@{
+    ViewBag.Title = "Commands";
+}
+<article>
+<section>
+
+<label id="select">Please select a category:</label>
+<select asp-items="ViewBag.Category"
+onchange="location.href='/Admin/Index/'+this.value" id="DesignSelect">
+<option value="0">All</option>
+</select>
+<a asp-action="CreateAnimal" asp-controller="Admin">
+<input type="submit" value="Add Animal" id="AddAnimal"/></a>
+
+</section>
+
+<section>
+
+<table id="Table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.PhotoUrl)</th>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Category.Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Description)</th>
+            <th>@Html.DisplayNameFor(model => model.BirthDate)</th>
+            <th>Edit Animal</th>
+            <th>Delete Animal</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model!) {
+        <tr>
+           <td><img src="~/Images/@item.PhotoUrl" id="ManagerImage"></td>
+           <td>@item.Name</td>
+           <td>@item.Category!.Name</td>
+           <td>@item.Description</td>
+           <td>@item.BirthDate.ToString("dd/MM/yyyy")</td>
+           <td><a asp-action="EditAnimal" asp-route-id="@item.AnimalId">
+               <input type="submit" value="Edit" id="DesignButton"></a></td>
+           <td><a asp-action="DeleteAnimal" asp-route-id="@item.AnimalId">
+               <input type="submit" value="Delete" id="DesignButton"></a></td>
+        </tr>
+           }
+    </tbody>
+</table>
+
+</section>
+</article>

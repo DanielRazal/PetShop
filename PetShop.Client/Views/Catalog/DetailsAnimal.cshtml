@@ -1,0 +1,77 @@
+﻿@model PetShop.Client.Models.AddCommentViewModel
+
+@{
+    ViewBag.Title = "DetailsAnimal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <div id="Space"></div>
+    <article id="Space">
+
+    <section id="DetailsPageDesign">
+
+    <table id="TableSize">
+    <thead>
+         <tr>
+         <th>Details of @Model.Animal!.Name</th>
+         <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td><label asp-for="@Model.Animal.Name"></label></td>
+        <td>@Model.Animal.Name</td>
+        </tr>
+        <tr>
+        <td><label asp-for="@Model.Animal.BirthDate"></label></td>
+        <td>@Model.Animal.BirthDate.ToString("dd/MM/yyyy")</td>
+        </tr>
+        <tr>
+        <td><label asp-for="@Model.Animal.Description"></label></td>
+        <td>@Model.Animal.Description</td>
+        </tr>
+        <tr>
+        <td><label asp-for="@Model.Animal.Category.Name"></label></td>
+        <td>@Model.Animal.Category.Name</td>
+        </tr>
+        <tr>
+        <td><label asp-for="@Model.Animal.PhotoUrl"></label></td>
+        <td><img src="~/Images/@Model.Animal.PhotoUrl" id="ImageDetail"/></td>
+        </tr>
+    </tbody>
+    </table>
+
+    </section>
+
+    <section>
+
+    <div id="LocationContent">
+    <a asp-action="Index">
+    <input type="submit" value="Back to Catalog Page" id="ButtonDesignDetailsPage" /></a>
+    <form method="post">
+    <input type="submit" value="Submit" id="SubmitButton"/>
+    <input asp-for="@Model.Comment!.Content" placeholder="Add your comment" id="ContentTextBox"/>
+    <span asp-validation-for="@Model.Comment!.Content" id="ContentValidation"></span>
+    </form>
+
+    <table>
+        <tbody>
+    @foreach(var item in Model.Comments!)
+    {
+        <tr>
+            <td>
+        <div id="ContentDesign">@item.Content</div>
+            </td>
+        </tr>
+    }
+    </tbody>
+    </table>
+    </div>
+
+    </section>
+    
+</article>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

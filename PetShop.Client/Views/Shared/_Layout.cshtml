@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title - PetShop.Client</title>
+    <link rel="icon" type="image/x-icon" href="/Images/PetShopFavicon.jpg">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PetShop.Client.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+                <div>
+                    <ul>
+                        <li>
+                        <img src=~/Images/HomePageImage.jpg id="HomePageImage">
+                        </li>
+                        <li>
+                            <a asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li>
+                            <a asp-controller="Catalog" asp-action="Index">Catalog</a>
+                        </li>
+                        <li>
+                            <a asp-controller="Admin" asp-action="Index">Administrator</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+        <h1>The Best Pet Shop In Town</h1>
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container-fluid">
+            &copy; 2022 - PetShop
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

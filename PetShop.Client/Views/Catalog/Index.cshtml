@@ -1,0 +1,44 @@
+﻿@model IEnumerable<PetShop.Data.Models.Animal>
+
+@{
+    ViewBag.Title = "CategoriesAnimals";
+}
+
+<article>
+
+<section>
+
+<label id="select">Please select a category:</label>
+<select asp-items="ViewBag.Category" onchange="location.href='/Catalog/Index/'+this.value" id="DesignSelect">
+<option value="0">All</option>
+</select>
+
+</section>
+
+<section>
+
+<table id="Table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.PhotoUrl)</th>
+            <th>@Html.DisplayNameFor(model => model.Category.Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th>Detail Of Animal</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model!) {
+        <tr>
+           <td><img src="~/Images/@item.PhotoUrl"></td>
+           <td>@item.Category.Name</td>
+           <td>@item.Name</td>
+           <td><a asp-action="DetailsAnimal" asp-route-id="@item.AnimalId">
+               <input type="submit" value="Detail" id="DetailButton"></a></td>
+        </tr>
+    }                
+    </tbody>
+</table>
+
+</section>
+
+</article>

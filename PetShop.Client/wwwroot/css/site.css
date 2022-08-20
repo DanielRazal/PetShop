@@ -1,0 +1,242 @@
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+    font-family: Arial;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin-bottom: 5%;
+    background-color: aliceblue;
+}
+
+header h1 {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-bottom:2.5%;
+}
+
+img {
+    width: 30%;
+    height: 40%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    display: inline-block;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 1.2rem 1.2rem;
+        text-decoration: none;
+    }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+#TableSize {
+    width: 61%;
+    height:100%;
+    margin-left: 82%;
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 3px solid black;
+    width: 1rem;
+    text-align: center;
+}
+
+th {
+    background-color: #04AA6D;
+    color: white;
+}
+
+td {
+    background-color: white;
+}
+
+#LocationContent {
+    margin-left: 60%;
+    margin-top: -4.8%;
+}
+
+#Table, #DeleteTable {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#Table td, #Table th, #DeleteTable td, #DeleteTable  th{
+    padding: 1%;
+}
+
+#DeleteTable{
+    margin-bottom:1%;
+}
+
+#ImageDelate {
+    width: 3rem;
+    height: 3rem;
+}
+
+#select, div h4{
+    font-weight: bold;
+    text-align: center;
+}
+#DesignButton, #AddAnimal, #DesignSelect, #DetailButton {
+    width: 60%;
+    background-color: #04AA6D;
+    color: white;
+    border: 3px solid black;
+    padding: 0.4rem;
+}
+#select{
+    margin:0 10%;
+}
+
+#DesignSelect {
+    width: 15%;
+    padding: 0;
+    margin-left:-8%;
+}
+
+
+
+#DetailButton {
+    width: 30%;
+}
+
+
+
+#AddAnimal {
+    width: 15%;
+    padding:0;
+    margin-left:1%;
+}
+
+#ContentTextBox {
+    margin-left: 1%;
+    width: 77%;
+    border: 3px solid black;
+    color: blue;
+}
+
+#ButtonDesign, #BackPageButton, input[type=file]::file-selector-button,
+#ButtonDesignDetailsPage, #UpdateButton, #CreateButton, #SubmitButton, #DeleteButton {
+    width: 20.8%;
+    background-color: #04AA6D;
+    color: white;
+    border: 3px solid black;
+    padding: 0.4%;
+    margin: 0 10%;
+}
+
+    #DeleteButton{
+        margin-bottom:1%;
+    }
+
+    #SubmitButton {
+        margin: 0 0;
+        margin-bottom:2%;
+    }
+
+#ButtonDesignDetailsPage {
+    margin-bottom: 1%;
+    margin-left: 0;
+    width: 40%;
+}
+
+#BackPageButton, #UpdateButton, #CreateButton {
+    width: 15%;
+    margin: 0 17.7%;
+    padding: 0.2%;
+}
+
+
+#DetailsPageDesign {
+    margin-bottom: 7%;
+    float: left;
+    margin-left: -32.6%;
+    height: 20rem;
+    width: 40rem;
+}
+
+input[type=file]::file-selector-button {
+    width: 40%;
+    margin: 0 0;
+    margin-bottom:5%;
+}
+
+
+#BackPageButton {
+    margin: 0 17.2%;
+    width: 15.2%;
+}
+ #HomePageImage {
+     width: 4rem;
+     height: 4rem;
+ }
+#ManagerImage {
+    width: 2rem;
+    height: 2rem;
+}
+
+#ContentDesign {
+    background-color: #f2f2f2;
+    width: 500px;
+    overflow: scroll;
+}
+
+#Validation, #ImageValidation, #ContentValidation {
+    color: red;
+    font-weight: bold;
+    margin-left: 9%;
+}
+
+#ImageValidation {
+    margin-left: 3%;
+}
+
+#ContentValidation {
+    margin-left: 0;
+}
+
+input, select {
+    width: 30%;
+    margin-bottom:1%;
+}
+
+#Space{
+    margin-bottom:3%;
+}
+
+#ImageDetail{
+    height: 50%
+}
+
+#ImageSize {
+    height: 4rem;
+    width: 4rem;
+    border:none;
+}

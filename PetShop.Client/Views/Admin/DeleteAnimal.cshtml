@@ -1,0 +1,60 @@
+﻿@model PetShop.Data.Models.Animal
+
+@{
+    ViewBag.Title = "DeleteAnimal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<article>
+
+<section>
+
+<table id="DeleteTable">
+    <thead>
+         <tr>
+            <th>Details of @Model.Name</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td><label asp-for="@Model.Name"></label></td>
+        <td>@Model.Name</td>
+        </tr>
+        <tr>
+        <td><label asp-for="@Model.BirthDate"></label></td>
+        <td>@Model.BirthDate.ToString("dd/MM/yyyy")</td>
+        </tr>
+        <tr>
+        <td><label asp-for="@Model.Description"></label></td>
+        <td>@Model.Description</td>
+        </tr>
+        <tr>
+        <td><label asp-for="@Model.Category!.Name"></label></td>
+        <td>@Model.Category!.Name</td>
+        </tr>
+        <tr>
+        <td><label asp-for="@Model.PhotoUrl"></label></td>
+        <td><img src="~/Images/@Model.PhotoUrl" id="ImageDelate"/></td>
+        </tr>
+    </tbody>
+</table>
+
+</section>
+
+<section>
+
+    <form asp-action="DeleteAnimal">
+    <input type="submit" value="Delete" id="DeleteButton"/>
+    </form>
+
+</section>    
+
+<section>
+
+    <a asp-action="Index">
+    <input type="submit" value="Back to Admin Page" id="ButtonDesign"/></a>
+
+</section>
+
+</article>
+
