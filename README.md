@@ -14,7 +14,7 @@ details about all the animals and adding comments about each animal (as Customer
 2) Open the file PetShop.
 
 3) A **database (SQLServer)** is used and we need to adapt it to our local server,
-  The definition of the database server is found in the appsettings.Json file
+  The definition of the database server is found in the **appsettings.Json** file
   in the **PetShop.Client API** where we will have to change to our local server in the **ConnectionString**.
 
 4) Run the project (Ctrl + f5).
