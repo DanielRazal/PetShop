@@ -7,8 +7,6 @@ details about all the animals and adding comments about each animal (as Customer
 
 **How to run the project?**
 
-**Server Side:**
-
 1) Open Visual Studio 2022.
 
 2) Open the file PetShop.
