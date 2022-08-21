@@ -9,7 +9,7 @@ details about all the animals and adding comments about each animal (as Customer
 
 1) Open Visual Studio 2022.
 
-2) Open the file PetShop.
+2) Open the PetShop file.
 
 3) A **database (SQLServer)** is used and we need to adapt it to our local server,
   The definition of the database server is found in the **appsettings.Json** file
