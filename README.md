@@ -1,18 +1,21 @@
-**PetShop**
+**PetShop Project**
 
-**Explanation of the project:**
+**Project Description:**
 
-Developing an **ASP .Net Core Mvc** to build a site for PetShop - Admin commands(CRUD),
-details about all the animals and adding comments about each animal (as Customers).
-
+This project involves developing an **ASP .Net Core MVC** site for PetShop.
+<br>
+The site provides admin commands (RESTful API) for managing details about all the animals and allows customers to add comments about each animal.
+<br>
 **How to run the project?**
 
 1) Open Visual Studio 2022.
 
-2) Open the PetShop file.
+2) Open the PetShop project.
 
-3) A **database (SQLServer)** is used and we need to adapt it to our local server,
-  The definition of the database server is found in the **appsettings.Json** file
-  in the **PetShop.Client API** where we will have to change to our local server in the **ConnectionString**.
+3) A **SQL Server Database** is used, and you need to adapt it to your local server.
+<br>
+The database server is defined in the **appsettings.Json** file located in the **PetShop.Client API** project.
+<br>
+You will need to update the **ConnectionString** to point to your local server.
 
-4) Run the project (Ctrl + f5).
+4) Run the project by pressing **Ctrl + F5**.
