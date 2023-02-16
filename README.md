@@ -13,9 +13,7 @@ The site provides admin commands (RESTful API) for managing details about all th
 2) Open the PetShop project.
 
 3) A **SQL Server Database** is used, and you need to adapt it to your local server.
-<br>
 The database server is defined in the **appsettings.Json** file located in the **PetShop.Client API** project.
-<br>
 You will need to update the **ConnectionString** to point to your local server.
 
 4) Run the project by pressing **Ctrl + F5**.
