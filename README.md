@@ -2,10 +2,9 @@
 
 **Project Description:**
 
-This project involves developing an **ASP .Net Core MVC** site for PetShop.
-<br>
-The site provides admin commands (RESTful API) for managing details about all the animals and allows customers to add comments about each animal.
-<br>
+Developed using ASP.NET MVC with Sql Server, Customers access animal details and share reviews. Meanwhile, admins wield streamlined control: add, delete, and edit animals.
+
+
 **How to run the project?**
 
 1) Open Visual Studio 2022.
