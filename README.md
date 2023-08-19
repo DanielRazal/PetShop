@@ -2,7 +2,7 @@
 
 **Project Description:**
 
-Developed using ASP.NET MVC with Sql Server, Customers access animal details and share reviews. Meanwhile, admins wield streamlined control: add, delete, and edit animals.
+Developed using **ASP.NET MVC with Sql Server**, Customers access animal details and share reviews. Meanwhile, admins wield streamlined control: add, delete, and edit animals.
 
 
 
