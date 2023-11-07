@@ -1,19 +1,14 @@
-**PetShop Project**
+# PetShop
 
-**Project Description:**
+Developed using **ASP.NET MVC with Sql Server**.\
+**"Paint"** is a collaborative painting application with a canvas.
+ Users can draw on the canvas and, thanks to a web socket feature, see the real-time contributions of others.
 
-Developed using **ASP.NET MVC with Sql Server**, Customers access animal details and share reviews. Meanwhile, admins wield streamlined control: add, delete, and edit animals.
+Customers access animal details and share reviews. Meanwhile, admins wield streamlined control: add, delete, and edit animals.
 
 
+## Running the Project
 
-**How to run the project?**
-
-1) Open Visual Studio 2022.
-
-2) Open the PetShop project.
-
-3) A **SQL Server Database** is used, and you need to adapt it to your local server.
-The database server is defined in the **appsettings.Json** file located in the **PetShop.Client API** project.
-You will need to update the **ConnectionString** to point to your local server.
-
-4) Run the project by pressing **Ctrl + F5**.
+1. Open the **PetShop** project in Visual Studio.
+2. Change my **ConnectionString (appsettings.Json)** to yours.
+3. Run the project with **CTRL+F5**.
